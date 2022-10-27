@@ -1,2 +1,5 @@
+include("TerminalVelocityEngine")
+include("StudioJar")
+project(':StudioJar').projectDir = file('TerminalVelocityEngine/StudioJar')
 rootProject.name = 'MultiplayerPong'
 
