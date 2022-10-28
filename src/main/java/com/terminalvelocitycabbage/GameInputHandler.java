@@ -2,8 +2,8 @@ package com.terminalvelocitycabbage;
 
 import com.terminalvelocitycabbage.engine.client.input.InputHandler;
 import com.terminalvelocitycabbage.engine.client.input.KeyBind;
+import com.terminalvelocitycabbage.engine.client.renderer.Renderer;
 import com.terminalvelocitycabbage.engine.client.renderer.components.Window;
-import com.terminalvelocitycabbage.engine.debug.Log;
 
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_ESCAPE;
 
@@ -21,7 +21,7 @@ public class GameInputHandler extends InputHandler {
     @Override
     public void processInput(KeyBind keyBind) {
         if (CLOSE.isKeyPressed()) {
-            keyBind.getWindow().queueClose();
+            Renderer.getWindow().queueClose();
         }
     }
 }

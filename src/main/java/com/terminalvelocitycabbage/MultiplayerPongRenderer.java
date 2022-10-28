@@ -3,9 +3,7 @@ package com.terminalvelocitycabbage;
 import com.terminalvelocitycabbage.engine.client.renderer.Renderer;
 import com.terminalvelocitycabbage.engine.client.renderer.components.Camera;
 import com.terminalvelocitycabbage.engine.client.renderer.gameobjects.ModeledGameObject;
-import com.terminalvelocitycabbage.engine.client.renderer.shader.Shader;
 import com.terminalvelocitycabbage.engine.client.renderer.shader.ShaderProgram;
-import com.terminalvelocitycabbage.engine.client.resources.Identifier;
 
 import static com.terminalvelocitycabbage.GameResourceHandler.SHADER;
 

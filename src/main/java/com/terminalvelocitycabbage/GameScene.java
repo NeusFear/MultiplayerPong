@@ -1,12 +1,10 @@
 package com.terminalvelocitycabbage;
 
-import com.terminalvelocitycabbage.engine.client.renderer.components.FirstPersonCamera;
 import com.terminalvelocitycabbage.engine.client.renderer.components.Window;
-import com.terminalvelocitycabbage.engine.client.renderer.gameobjects.Cube;
-import com.terminalvelocitycabbage.engine.client.renderer.gameobjects.ModeledGameObject;
 import com.terminalvelocitycabbage.engine.client.renderer.gameobjects.lights.DirectionalLight;
-import com.terminalvelocitycabbage.engine.client.renderer.model.types.CuboidModel;
 import com.terminalvelocitycabbage.engine.client.renderer.scenes.Scene;
+import com.terminalvelocitycabbage.engine.prefabs.camera.firstperson.firstperson.FirstPersonCamera;
+import com.terminalvelocitycabbage.engine.prefabs.gameobjects.Cube;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 
