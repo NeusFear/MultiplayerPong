@@ -3,12 +3,12 @@ package com.terminalvelocitycabbage;
 import com.terminalvelocitycabbage.engine.client.ClientBase;
 import com.terminalvelocitycabbage.engine.debug.Logger;
 
-public class MultiplayerPongClient extends ClientBase {
+public class GameClient extends ClientBase {
 
-    public static final String ID = "pong";
+    public static final String ID = "example";
 
-    public MultiplayerPongClient() {
-        super(new Logger(ID), new MultiplayerPongRenderer(1900, 1000, "Pong Client", 60, false));
+    public GameClient() {
+        super(new Logger(ID), new GameRenderer(1900, 1000, "Pong Client", 60, false));
 
         //assign client context to this class
         instance = this;
@@ -18,7 +18,7 @@ public class MultiplayerPongClient extends ClientBase {
     }
 
     public static void main(String[] args) {
-        new MultiplayerPongClient();
+        new GameClient();
     }
 
     @Override

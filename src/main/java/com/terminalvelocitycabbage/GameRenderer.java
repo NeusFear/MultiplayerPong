@@ -11,9 +11,9 @@ import static com.terminalvelocitycabbage.GameResourceHandler.SHADER;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL11.GL_DEPTH_BUFFER_BIT;
 
-public class MultiplayerPongRenderer extends Renderer {
+public class GameRenderer extends Renderer {
 
-    public MultiplayerPongRenderer(int width, int height, String title, float tickRate, boolean debugMode) {
+    public GameRenderer(int width, int height, String title, float tickRate, boolean debugMode) {
         super(width, height, title, tickRate, debugMode);
     }
 
@@ -23,7 +23,7 @@ public class MultiplayerPongRenderer extends Renderer {
         getWindow().setvSync(true);
 
         //Setup Shaders
-        shaderHandler.newProgram("default").queueDefaultShaders(SHADER, MultiplayerPongClient.ID).build();
+        shaderHandler.newProgram("default").queueDefaultShaders(SHADER, GameClient.ID).build();
 
         //Register scene
         getSceneHandler().addScene("game_scene", new GameScene());

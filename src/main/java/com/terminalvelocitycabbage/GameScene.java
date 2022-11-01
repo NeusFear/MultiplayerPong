@@ -18,7 +18,7 @@ public class GameScene extends Scene {
     public void init(Window window) {
         super.init(window);
 
-        objectHandler.add("cube", new Cube(new Vector3f(0f, 0f, -3f), new Vector4f(1, 0, 0, 1), 1f)).bind();
+        objectHandler.add("cube", new Cube(new Vector3f(0f, 0f, -3f), new Vector4f(1, 0, 0, 1), 10f)).bind();
 
         objectHandler.add("sun", new DirectionalLight(new Vector3f(-0.68f, 0.55f, 0.42f), new Vector4f(1, 1, 0.5f, 1), 0.3f));
     }
